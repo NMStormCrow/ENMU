@@ -17,8 +17,6 @@
 #  Input: None
 #  Output: None
 
-##################################################################################################################
-
 def calculateBMI():
     
     print("This program calculates body mass index (BMI)") 
@@ -33,6 +31,8 @@ def calculateBMI():
         print("This BMI is considered above the healthy range.")
     else:
         print("This BMI is considered to be within the healthy range.")
+
+##################################################################################################################
 
 
 def main():
