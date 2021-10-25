@@ -34,10 +34,10 @@ def dateCalculator():
     monthsWith30Days=[4,6,9,11]
 
 
-    if (int(userMonth) in monthsWith31Days):
-        if (int(userDay)>31):
+    if (formattedMonth in monthsWith31Days):
+        if (formattedDay>31):
             print("You entered a date with too many days in the month.")
-        elif (int(userDay)<1):
+        elif (formattedDay<1):
             print("You entered a date with too few days in the month.")
         else:
             print(f"The date is: {userInputtedDate}")
@@ -45,10 +45,10 @@ def dateCalculator():
                 print(f"This is day {userDayNum} of 366.")
             else:
                 print(f"This is day {userDayNum} of 365.")
-    elif (int(userMonth) in monthsWith30Days):
-        if (int(userDay)>30):
+    elif (formattedMonth in monthsWith30Days):
+        if (formattedDay>30):
             print("You entered a date with too many days in the month.")
-        elif (int(userDay)<1):
+        elif (formattedDay<1):
             print("You entered a date with too few days in the month.")
         else:
             print(f"The date is: {userInputtedDate}")
@@ -56,17 +56,17 @@ def dateCalculator():
                 print(f"This is day {userDayNum} of 366.")
             else:
                 print(f"This is day {userDayNum} of 365.")
-    elif (int(userMonth)==2):
-        if (leapYear) and (int(userDay)>29):
+    elif (formattedMonth==2):
+        if (leapYear) and (formattedDay>29):
             print("You entered a date with too many days in the month.")
-        elif (leapYear) and (int(userDay)<1):
+        elif (leapYear) and (formattedDay<1):
             print("You entered a date with too few days in the month.")
         elif (leapYear):
             print(f"The date is: {userInputtedDate}")
             print(f"This is day {userDayNum} of 366.")
-        elif ~(leapYear) and (int(userDay)>28):
+        elif ~(leapYear) and (formattedDay>28):
             print("You entered a date with too many days in the month.")
-        elif ~(leapYear) and (int(userDay)<1):
+        elif ~(leapYear) and (formattedDay<1):
             print("You entered a date with too few days in the month.")
         else:
             print(f"The date is: {userInputtedDate}")
