@@ -37,10 +37,10 @@ def runSyracuse(naturalNumber):
 ##################################################################################################################
 
 ##################################################################################################################
-#  Description: Obtains two numbers from user, determines if that are valid
+#  Description: Obtains a number from user, determines if it's a valid natural number
 #  Input: None
 #  Output: Integer value of a natural number
-#          Boolean value if numbers are valid          
+#          Boolean value if number is valid          
 # 
 
 def obtainValidNumber():
