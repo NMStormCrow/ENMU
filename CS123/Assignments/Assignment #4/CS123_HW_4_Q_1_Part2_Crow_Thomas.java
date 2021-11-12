@@ -24,7 +24,7 @@ class PrintWorldViaWhileLoop {
                 System.out.print("Please enter a postive number equal to 100 or less.\n");
             }
             else {
-              scan.close();
+                scan.close();
             }
         } 
 
