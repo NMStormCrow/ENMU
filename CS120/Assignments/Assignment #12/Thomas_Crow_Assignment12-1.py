@@ -52,9 +52,9 @@ def simNGames(n, probA, probB):
             winsA = winsA + 1
         else:
             winsB = winsB + 1
-        if shutA == 0:
+        if scoreA == 0:
             shutA = shutA + 1
-        elif shutB == 0:
+        elif scoreB == 0:
             shutB = shutB + 1 
     return winsA, winsB, shutA, shutB
 

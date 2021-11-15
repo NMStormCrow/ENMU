@@ -42,7 +42,7 @@ def getN():
 #               Heads means one step forward
 #               Tails means one step back
 #               
-#  Input:  
+#  Input:  Number of coin flips
 #  Output: None
 
 def simNflips(n):
