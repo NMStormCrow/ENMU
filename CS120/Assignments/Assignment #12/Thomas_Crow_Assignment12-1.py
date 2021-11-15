@@ -10,9 +10,9 @@
 from random import random
 
 ##################################################################################################################
-#  Description: 
-#  Input: 
-#  Output: 
+#  Description: Prints description of program
+#  Input: None
+#  Output:  None
 
 def printlntro():
     print("This program simulates a game of racquetball between two")
@@ -24,8 +24,8 @@ def printlntro():
 ##################################################################################################################
 
 ##################################################################################################################
-#  Description: 
-#  Input: 
+#  Description: Obtains program values from user
+#  Input: None
 #  Output: Returns the three simulation parameters
 
 def getlnputs():
@@ -40,7 +40,7 @@ def getlnputs():
 #  Description: Simulates n games of racquetball between players whose
 #               abilities are represented by the probability of winning a serve.
 #               
-#  Input: 
+#  Input: Number of games, probability of serve wins by A and B
 #  Output: Returns number of wins for A and B
 
 def simNGames(n, probA, probB):
