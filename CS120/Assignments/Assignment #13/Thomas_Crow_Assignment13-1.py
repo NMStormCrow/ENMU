@@ -48,6 +48,6 @@ def main():
     while cball.getY() >= 0:
         cball.update(time)
     print("\nDistance traveled: {0:0.1f} meters.".format(cball.getX()))
-    print("Maximum height acheived: {0:0.1f} meters.".format(cball.getYMax()))
+    print("Maximum height acheived: {0:0.1f} meters.\n".format(cball.getYMax()))
 
 main()
