@@ -20,17 +20,17 @@ class Sphere:
 
     def __init__(self, radius):
         self.radius = radius
-        self.surfaceArea = 4 * math.pi * (self.radius ** 2)
-        self.volume = 4/3 * (math.pi ** 3) 
+        self.surface = 4 * math.pi * (self.radius ** 2)
+        self.vol = 4/3 * (math.pi ** 3) 
 
     def getRadius(self):
         return self.radius
     
     def surfaceArea(self):
-        return self.surfaceArea
+        return self.surface
     
     def volume(self):
-        return self.volume
+        return self.vol
 
 def getInput():
     r = float (input ("Enter the radius of the sphere: "))
@@ -39,8 +39,8 @@ def getInput():
 def main():
     sphereRadius = getInput()
     sphere = Sphere(sphereRadius)
-    print("\nSphere radius: {0:0.1f}.".format(sphere.getRadius()))
-    print("Sphere surface area: {0:0.1f}.".format(sphere.surfaceArea()))
-    print("Sphere volume: {0:0.1f}.\n".format(sphere.volume()))
+    print("\nSphere radius: {0:0.1f}".format(sphere.getRadius()))
+    print("Sphere surface area: {0:0.1f}".format(sphere.surfaceArea()))
+    print("Sphere volume: {0:0.1f}\n".format(sphere.volume()))
 
 main()
