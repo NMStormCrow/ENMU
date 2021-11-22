@@ -41,7 +41,7 @@ class PlayingCard:
             return self.rank
     
     def __str__(self):
-        rankList = ["Empty", "Ace","Two","Three","Four","Five","Six","Seven","Eight","Nine","Ten","Jack","Queen","King"]
+        rankList = ["Empty","Ace","Two","Three","Four","Five","Six","Seven","Eight","Nine","Ten","Jack","Queen","King"]
         suitList = {'c': 'Clubs', 'd': 'Diamonds', 'h': 'Hearts', 's': 'Spades'}
         return rankList[self.rank] + ' of ' + suitList[self.suit]
 
