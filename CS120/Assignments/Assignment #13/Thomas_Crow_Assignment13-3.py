@@ -23,6 +23,10 @@ class Student:
         self.name = name
         self.hours = float(hours)
         self.qpoints = float(qpoints)
+    
+    def addGrade(self, gradePoint, credits):
+        self.hours = self.hours + credits
+        self.qpoints = self.qpoints + (gradePoint * credits)
 
     def getName(self):
         return self.name
@@ -36,32 +40,36 @@ class Student:
     def gpa(self):
         return self.qpoints/self.hours
 
-def makeStudent (infoStr):
-    # infoStr is a tab-separated line: name hours qpoints
-    # returns a corresponding Student object
-    name, hours, qpoints = infoStr.split("\t")
+def makeStudent ():
+    name = input ("Please enter the name of the student: ")
+    hours = 0
+    qpoints = 0
     return Student(name, hours, qpoints)
         
 def main():
-    # open the input file for reading
-    filename = input ("Enter the name of the grade file: ")
-    infile = open(filename, 'r')
-    
-    # set best to the record for the first student in the file
-    best = makeStudent(infile.readline())
-    
-    # process subsequent lines of the file
-    for line in infile:
-        # turn the line into a student record
-        s = makeStudent(line)
-        # if this student is best so far , remember it .
-        if s.gpa() > best.gpa():
-            best = s
-    infile.close()
-    # print information about the best student
-    print ("The best student is: ", best.getName())
-    print ("hours: ", best.getHours())
-    print ("GPA: ", best.gpa())
+    student = makeStudent()
+    userChoice = True
 
-if __name__ == 'main':
+    while (userChoice == True):
+        gradePoint = float(input("Please enter the gradepoint for a class: "))
+        creditHours = float(input("Please enter the credit hours for the class: "))
+        student.addGrade(gradePoint, creditHours)
+        loopBool = True
+        while (loopBool == True):
+            userInput = input("Do you have more classes to enter?  Type yes to continue. Type no to quit: ")
+            if (userInput.lower() == "yes"):
+                userChoice = True
+                loopBool = False
+            elif (userInput.lower() == "no"):
+                userChoice = False
+                loopBool = False
+            else:
+                print("You did not enter a valid entry. Please try again.")
+                loopBool = True
+    print(f"The grade point average for {student.getName()} is: {round(student.gpa(),2)}")
+    
+
+
+
+if __name__ == '__main__':
     main()
