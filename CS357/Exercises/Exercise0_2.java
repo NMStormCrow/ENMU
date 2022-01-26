@@ -1,10 +1,10 @@
-public class Exercise1_3 {
+public class Exercise0_2 {
     public static void main(String args[]) {
 
-        for (int i=11; i>=1; i=i-2)
+        for (int i=0; i<=12; i=i+3)
         {
             System.out.print(i);
-            if (i>1)
+            if (i<12)
                 System.out.print(", ");
             else
                 System.out.println();

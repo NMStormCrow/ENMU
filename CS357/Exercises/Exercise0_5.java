@@ -1,4 +1,4 @@
-public class Exercise1_5 {
+public class Exercise0_5 {
     public static void main(String args[]) {
         for (int i=0; i<10; i++) {
             for (int j=0; j<=7; j++) {
