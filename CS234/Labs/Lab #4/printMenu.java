@@ -8,6 +8,7 @@ import java.util.Scanner;
 
 public class printMenu {
 
+    //  Open Scanner    
     static Scanner scan = new Scanner(System.in);
 
     /*
@@ -35,15 +36,15 @@ public class printMenu {
 */
 
     public static int countA(String s) {
-        int numberOfLowerCase = 0;
+        int numberOfAs = 0;
         char loopChar = 0; 
         for (int i = 0; i < s.length(); i++) {
             loopChar = s.charAt(i);
-            if (Character.isLowerCase(loopChar)) {
-                numberOfLowerCase++;
+            if (loopChar == 'a') {
+                numberOfAs++;
             }        
         }
-        return numberOfLowerCase;
+        return numberOfAs;
     }
 
     /* The method takes a character and a string and return a string that has
@@ -54,11 +55,12 @@ public class printMenu {
     */
     
     public static String interleave(char c, String s) {
-
         String newString = new String("");
-
+        for (int i = 0; i < s.length(); i++) {
+            newString = newString + s.charAt(i);
+            newString = newString + c;
+        }
         return newString;
-
     }
     
     /*
@@ -116,14 +118,47 @@ public class printMenu {
     */
 
     public static void option2() {
-
+        String userString = new String("");
+        int NumOfAs = 0;
+        boolean keepRunning = true;
+        while (keepRunning) {
+            try {
+                System.out.printf("Write the string:\n");
+                userString = scan.nextLine();
+                NumOfAs = countA(userString);
+                System.out.printf("There are %d a's\n", NumOfAs);
+                keepRunning = false;
+            }
+            catch (Exception e) {
+                scan.reset();
+                scan.next();
+                System.out.printf("Invalid option\n");
+            }
+        }
     }
+        
 
     /*
     * This method gets the values for interleave()and calls it
     */
 
     public static void option3() {
+
+        boolean keepRunning = true;
+        char userChar;
+
+        while (keepRunning) {
+            try {
+                System.out.printf("Write the character:\n");
+                userChar = scan.next().charAt(0);
+                
+
+
+            }
+            catch (Exception e) {
+
+            }
+        }
 
     }
 
