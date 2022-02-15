@@ -1,7 +1,7 @@
 /*
 * CS234
 * Thomas Crow
-* Lab #4 Q1
+* Lab #4
 */
 
 import java.util.Scanner;
@@ -55,7 +55,9 @@ public class printMenu {
     */
     
     public static String interleave(char c, String s) {
+        
         String newString = new String("");
+        
         for (int i = 0; i < s.length(); i++) {
             newString = newString + s.charAt(i);
             newString = newString + c;
@@ -75,12 +77,18 @@ public class printMenu {
     */
 
     public static String replace(String s, char a, char b) {
+        char loopChar;
+        String replacedString = new String("");
 
-        String newString = new String("");
-
-        return newString;
+        for (int i = 0; i < s.length(); i++) {
+            loopChar = s.charAt(i);
+            if (loopChar == a) {
+                loopChar = b;
+            }        
+            replacedString = replacedString + loopChar;
+        }
+        return replacedString;
     }
-    
     
     /*
     * This method gets the values for printNumbers() and calls it
@@ -137,7 +145,6 @@ public class printMenu {
         }
     }
         
-
     /*
     * This method gets the values for interleave()and calls it
     */
@@ -146,20 +153,26 @@ public class printMenu {
 
         boolean keepRunning = true;
         char userChar;
+        String userString;
+        String interleavedString;
 
         while (keepRunning) {
             try {
                 System.out.printf("Write the character:\n");
-                userChar = scan.next().charAt(0);
-                
-
-
+                userChar = scan.nextLine().charAt(0);
+                System.out.printf("Write the string:\n");
+                userString = scan.nextLine();
+                interleavedString = interleave(userChar, userString);
+                System.out.println(userString);
+                System.out.println(interleavedString);
+                keepRunning = false;
             }
             catch (Exception e) {
-
+                scan.reset();
+                scan.next();
+                System.out.printf("Invalid option\n");    
             }
         }
-
     }
 
     /*
@@ -167,7 +180,30 @@ public class printMenu {
     */
 
     public static void option4() {
+        String userString;
+        String replacedString;
+        char userTargetChar, userReplaceChar;
+        boolean keepRunning = true;
 
+        while (keepRunning) {
+            try {
+                System.out.printf("Write the string:\n");
+                userString = scan.nextLine();
+                System.out.printf("Write the target character:\n");
+                userTargetChar = scan.nextLine().charAt(0);
+                System.out.printf("Write the new character:\n");
+                userReplaceChar = scan.nextLine().charAt(0);
+                replacedString = replace(userString, userTargetChar, userReplaceChar);
+                System.out.println(userString);
+                System.out.println(replacedString);
+                keepRunning = false;
+            }
+            catch (Exception e) {
+                scan.reset();
+                scan.next();
+                System.out.printf("Invalid option\n"); 
+            }
+        }
     }
 
     /*
@@ -182,7 +218,6 @@ public class printMenu {
         boolean keepRunning = true;
         Scanner scan = new Scanner(System.in);
         int userChoice;
-
 
         while (keepRunning) {
             System.out.printf("Select an option:\n");
@@ -224,5 +259,4 @@ public class printMenu {
     public static void main(String args []) {
         menu();
     }
-
 }
