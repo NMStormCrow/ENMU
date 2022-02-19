@@ -27,13 +27,13 @@ public class printMenu {
         System.out.printf("\n");
     }
 
-/*
+    /*
     * The method takes a String and returns the number of lower-case letters
     'a'
     * in the string. Do not use the count() built-in method.
     * @param s, the string
     * @return the count
-*/
+    */
 
     public static int countA(String s) {
         int numberOfAs = 0;
@@ -163,7 +163,6 @@ public class printMenu {
                 System.out.printf("Write the string:\n");
                 userString = scan.nextLine();
                 interleavedString = interleave(userChar, userString);
-                System.out.println(userString);
                 System.out.println(interleavedString);
                 keepRunning = false;
             }
