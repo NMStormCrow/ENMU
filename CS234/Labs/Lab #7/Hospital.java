@@ -26,14 +26,21 @@ public class Hospital  {
     private String HospitalName;
 
 //  Default contstructor
-    public Hospital() {
-
+    public Hospital(String Name) {
+        HospitalName = Name;
     }
 
-//  Method: PatientHealth
-//  Purpose: Determine if patient is alive, add health if so
-//  Arguments: None
+//  Method: healPatient
+//  Purpose: Heals Patient by 1 as long as the health is greater than 0
+//  Arguments: Patient as a string
 //  Returns: None
-
-
+    public void healPatient(Soldier patient) {
+        int health = patient.getHealth();
+        if (health > 0) {
+            patient.setHealth(health + 1);
+        }
+        else {
+            System.out.printf("The patient already is dead\n");
+        }
+    }
 }
