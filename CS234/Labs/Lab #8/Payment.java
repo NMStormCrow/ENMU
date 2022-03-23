@@ -1,7 +1,7 @@
 /*
-* CS234
 * Thomas Crow
 * Lab #8 
+* CS234
 */
 
 public class Payment {
@@ -11,7 +11,7 @@ public class Payment {
 
 //  Default constructor
     public Payment(Double amount) {
-        this.paymentAmount = amount; 
+         setPaymentAmount(amount); 
     }
 
 //  Method: getPaymentAmount

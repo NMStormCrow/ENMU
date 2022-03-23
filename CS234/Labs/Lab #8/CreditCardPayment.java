@@ -1,7 +1,7 @@
 /*
-* CS234
 * Thomas Crow
 * Lab #8 
+* CS234
 */
 
 public class CreditCardPayment extends Payment {
