@@ -41,7 +41,7 @@ public class CreditCardPayment extends Payment {
 //  Returns: None
 
     public void paymentDetails() {
-        System.out.println("Payment of $" + this.getPaymentAmount());
+        super.paymentDetails();
         System.out.println("        Using the card " + this.getCardNumber() + ", with expiration date " + getCardExpiration());
         System.out.println("------------------------------------------------");
     }

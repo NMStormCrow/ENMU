@@ -30,7 +30,7 @@ public class CashPayment extends Payment {
 //  Returns:  None
 
     public void paymentDetails() {
-        System.out.println("Payment of $" + this.getPaymentAmount());
+        super.paymentDetails();
         System.out.println("        Client " + this.getClientName() + " paid in cash");
         System.out.println("------------------------------------------------");
     }
