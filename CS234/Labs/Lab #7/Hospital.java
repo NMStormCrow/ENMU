@@ -41,6 +41,7 @@ public class Hospital  {
         }
         else {
             System.out.printf("The patient already is dead\n");
+        System.out.print(HospitalName);
         }
     }
 }
