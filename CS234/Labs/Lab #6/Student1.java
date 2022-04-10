@@ -19,14 +19,14 @@
 
 import java.util.ArrayList;
 
-public class Student {
+public class Student1 {
 
 //  Declaration of instance variables
     private String StudentName;
     private ArrayList<Double> StudentGrades = new ArrayList<Double>();
 
 //  Default contstructor
-    public Student() {
+    public Student1() {
     }
 
 //  Method: setName

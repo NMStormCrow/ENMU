@@ -2,8 +2,8 @@ public class tester2 {
 
     public static void main (String[] args)
     {
-        Student john = new Student();
-        Student emma = new Student();
+        Student1 john = new Student1();
+        Student1 emma = new Student1();
         john.setName("John");
         emma.setName("Emma");
 
