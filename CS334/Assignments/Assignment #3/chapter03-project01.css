@@ -1,0 +1,15 @@
+header, footer {
+    color: white;
+    background-color: #3D6271;
+    margin: 0;
+    }
+h1 {
+    font-size: 24px;
+}
+table {
+    border-collapse: collapse;
+    max-width: 80%;
+}
+.subbar {
+    color: #ADD8E6;
+}
