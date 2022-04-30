@@ -16,6 +16,8 @@ figure {
    padding: 5px;
    width: 150px;
    margin: 10px;
+   width: 150px;
+   float: left;
 }
 
 

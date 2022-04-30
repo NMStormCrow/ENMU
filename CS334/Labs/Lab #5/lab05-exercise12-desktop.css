@@ -35,6 +35,10 @@ nav {
   float: left; 
 }
 
+nav select {
+   display: none;
+}
+
 div#main {
     padding: 0.5em;
     margin-left: 12em;

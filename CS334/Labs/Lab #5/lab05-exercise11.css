@@ -29,19 +29,26 @@ nav {
   color: white;
   background-color: #A9A9A9;
   padding: 0.5em;  
-
+  width: 10em;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 div#main {
     padding: 0.5em;
-
+    margin-left: 12em;
+    margin-right: 12em;
 }
 
 aside {
   color: white;
   background-color: #D3C6BA;
   padding: 0.5em;  
-
+  width: 10em;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 footer {
@@ -56,3 +63,7 @@ footer {
    margin: 3px 3px 10px 3px;
    padding: 5px;
 }   
+
+div#container {
+  position: relative;
+}
