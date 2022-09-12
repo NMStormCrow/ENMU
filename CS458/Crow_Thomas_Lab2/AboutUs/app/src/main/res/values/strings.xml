@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">About Us</string>
+    <string name="forest_lake">forest_lake</string>
+    <string name="about_us">Mindfulness Timer is one of the highest rated personal health applications on the Google Play Store. Our goal is to provide peace of mind whenever you feel the need. This app will always remain free as we feel strongly that the greatly good comes first.</string>
+    <string name="textview">About Us</string>
+</resources>
