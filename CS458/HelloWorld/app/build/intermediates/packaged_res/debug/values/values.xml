@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="http://schemas.android.com/tools">
+    <string-array name="companies">
+        <item>Eastern New Mexico State University</item>
+        <item>New Mexico State University</item>
+        <item>University of New Mexico</item>
+    </string-array>
+    <color name="black">#FF000000</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="add_me_to_your_mailing_list">Add me to your mailing list</string>
+    <string name="app_name">Newsletter Signup Form</string>
+    <string name="email_address">Email Address</string>
+    <string name="first_name">First Name</string>
+    <string name="hello_students">Hello Students!</string>
+    <string name="i_agree_to_receive_e_mails_from_your_company_and_your_terms_and_conditions">I agree to receive e-mails from your company and your terms and conditions.</string>
+    <string name="last_name">Last Name</string>
+    <string name="run">Run</string>
+    <string name="sign_me_up">Sign Me Up</string>
+    <string name="textview_ntextview">TextView\nTextView</string>
+    <string name="todo">TODO</string>
+    <style name="Theme.HelloWorld" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        
+        <item name="android:statusBarColor" ns1:targetApi="l">?attr/colorPrimaryVariant</item>
+        
+    </style>
+</resources>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Newsletter Signup Form</string>
+    <string name="hello_students">Hello Students!</string>
+    <string name="run">Run</string>
+    <string name="textview_ntextview">TextView\nTextView</string>
+    <string name="todo">TODO</string>
+    <string name="email_address">Email Address</string>
+    <string name="sign_me_up">Sign Me Up</string>
+    <string name="add_me_to_your_mailing_list">Add me to your mailing list</string>
+    <string name="i_agree_to_receive_e_mails_from_your_company_and_your_terms_and_conditions">I agree to receive e-mails from your company and your terms and conditions.</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string-array name="companies">
+        <item>Eastern New Mexico State University</item>
+        <item>New Mexico State University</item>
+        <item>University of New Mexico</item>
+    </string-array>
+</resources>

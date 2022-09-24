@@ -1,0 +1,104 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.helloworld"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->/Users/tbcrow/git-repos/ENMU/CS458/HelloWorld/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="32" />
+9-->/Users/tbcrow/git-repos/ENMU/CS458/HelloWorld/app/src/main/AndroidManifest.xml
+10
+11    <application
+11-->/Users/tbcrow/git-repos/ENMU/CS458/HelloWorld/app/src/main/AndroidManifest.xml:6:5-41:19
+12        android:allowBackup="true"
+12-->/Users/tbcrow/git-repos/ENMU/CS458/HelloWorld/app/src/main/AndroidManifest.xml:7:9-35
+13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+13-->[androidx.core:core:1.8.0] /Users/tbcrow/.gradle/caches/transforms-3/0638d9dacb5fd10604e28ec2b4d3c80b/transformed/core-1.8.0/AndroidManifest.xml:24:18-86
+14        android:dataExtractionRules="@xml/data_extraction_rules"
+14-->/Users/tbcrow/git-repos/ENMU/CS458/HelloWorld/app/src/main/AndroidManifest.xml:8:9-65
+15        android:debuggable="true"
+16        android:fullBackupContent="@xml/backup_rules"
+16-->/Users/tbcrow/git-repos/ENMU/CS458/HelloWorld/app/src/main/AndroidManifest.xml:9:9-54
+17        android:icon="@mipmap/ic_launcher"
+17-->/Users/tbcrow/git-repos/ENMU/CS458/HelloWorld/app/src/main/AndroidManifest.xml:10:9-43
+18        android:label="@string/app_name"
+18-->/Users/tbcrow/git-repos/ENMU/CS458/HelloWorld/app/src/main/AndroidManifest.xml:11:9-41
+19        android:roundIcon="@mipmap/ic_launcher_round"
+19-->/Users/tbcrow/git-repos/ENMU/CS458/HelloWorld/app/src/main/AndroidManifest.xml:12:9-54
+20        android:supportsRtl="true"
+20-->/Users/tbcrow/git-repos/ENMU/CS458/HelloWorld/app/src/main/AndroidManifest.xml:13:9-35
+21        android:testOnly="true"
+22        android:theme="@style/Theme.HelloWorld" >
+22-->/Users/tbcrow/git-repos/ENMU/CS458/HelloWorld/app/src/main/AndroidManifest.xml:14:9-48
+23        <activity
+23-->/Users/tbcrow/git-repos/ENMU/CS458/HelloWorld/app/src/main/AndroidManifest.xml:16:9-22:20
+24            android:name="com.example.helloworld.MainActivity202"
+24-->/Users/tbcrow/git-repos/ENMU/CS458/HelloWorld/app/src/main/AndroidManifest.xml:17:13-44
+25            android:parentActivityName="com.example.helloworld.MainActivity" >
+25-->/Users/tbcrow/git-repos/ENMU/CS458/HelloWorld/app/src/main/AndroidManifest.xml:18:13-55
+26            <meta-data
+26-->/Users/tbcrow/git-repos/ENMU/CS458/HelloWorld/app/src/main/AndroidManifest.xml:19:9-21:45
+27                android:name="android.support.PARENT_ACTIVITY"
+27-->/Users/tbcrow/git-repos/ENMU/CS458/HelloWorld/app/src/main/AndroidManifest.xml:20:13-59
+28                android:value=".MainActivity" />
+28-->/Users/tbcrow/git-repos/ENMU/CS458/HelloWorld/app/src/main/AndroidManifest.xml:21:13-42
+29        </activity>
+30        <activity
+30-->/Users/tbcrow/git-repos/ENMU/CS458/HelloWorld/app/src/main/AndroidManifest.xml:23:9-31:20
+31            android:name="com.example.helloworld.submission"
+31-->/Users/tbcrow/git-repos/ENMU/CS458/HelloWorld/app/src/main/AndroidManifest.xml:24:13-39
+32            android:parentActivityName="com.example.helloworld.MainActivity" >
+32-->/Users/tbcrow/git-repos/ENMU/CS458/HelloWorld/app/src/main/AndroidManifest.xml:25:13-55
+33
+34            <!-- The meta-data tag is required if you support API level 15 and lower -->
+35            <meta-data
+35-->/Users/tbcrow/git-repos/ENMU/CS458/HelloWorld/app/src/main/AndroidManifest.xml:19:9-21:45
+36                android:name="android.support.PARENT_ACTIVITY"
+36-->/Users/tbcrow/git-repos/ENMU/CS458/HelloWorld/app/src/main/AndroidManifest.xml:20:13-59
+37                android:value=".MainActivity" />
+37-->/Users/tbcrow/git-repos/ENMU/CS458/HelloWorld/app/src/main/AndroidManifest.xml:21:13-42
+38        </activity>
+39        <activity
+39-->/Users/tbcrow/git-repos/ENMU/CS458/HelloWorld/app/src/main/AndroidManifest.xml:32:9-40:20
+40            android:name="com.example.helloworld.MainActivity"
+40-->/Users/tbcrow/git-repos/ENMU/CS458/HelloWorld/app/src/main/AndroidManifest.xml:33:13-41
+41            android:exported="true" >
+41-->/Users/tbcrow/git-repos/ENMU/CS458/HelloWorld/app/src/main/AndroidManifest.xml:34:13-36
+42            <intent-filter>
+42-->/Users/tbcrow/git-repos/ENMU/CS458/HelloWorld/app/src/main/AndroidManifest.xml:35:13-39:29
+43                <action android:name="android.intent.action.MAIN" />
+43-->/Users/tbcrow/git-repos/ENMU/CS458/HelloWorld/app/src/main/AndroidManifest.xml:36:17-69
+43-->/Users/tbcrow/git-repos/ENMU/CS458/HelloWorld/app/src/main/AndroidManifest.xml:36:25-66
+44
+45                <category android:name="android.intent.category.LAUNCHER" />
+45-->/Users/tbcrow/git-repos/ENMU/CS458/HelloWorld/app/src/main/AndroidManifest.xml:38:17-77
+45-->/Users/tbcrow/git-repos/ENMU/CS458/HelloWorld/app/src/main/AndroidManifest.xml:38:27-74
+46            </intent-filter>
+47        </activity>
+48
+49        <provider
+49-->[androidx.emoji2:emoji2:1.2.0] /Users/tbcrow/.gradle/caches/transforms-3/9f99c19470d8bf18ee15270d078c3173/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+50            android:name="androidx.startup.InitializationProvider"
+50-->[androidx.emoji2:emoji2:1.2.0] /Users/tbcrow/.gradle/caches/transforms-3/9f99c19470d8bf18ee15270d078c3173/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
+51            android:authorities="com.example.helloworld.androidx-startup"
+51-->[androidx.emoji2:emoji2:1.2.0] /Users/tbcrow/.gradle/caches/transforms-3/9f99c19470d8bf18ee15270d078c3173/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
+52            android:exported="false" >
+52-->[androidx.emoji2:emoji2:1.2.0] /Users/tbcrow/.gradle/caches/transforms-3/9f99c19470d8bf18ee15270d078c3173/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
+53            <meta-data
+53-->[androidx.emoji2:emoji2:1.2.0] /Users/tbcrow/.gradle/caches/transforms-3/9f99c19470d8bf18ee15270d078c3173/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+54                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+54-->[androidx.emoji2:emoji2:1.2.0] /Users/tbcrow/.gradle/caches/transforms-3/9f99c19470d8bf18ee15270d078c3173/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
+55                android:value="androidx.startup" />
+55-->[androidx.emoji2:emoji2:1.2.0] /Users/tbcrow/.gradle/caches/transforms-3/9f99c19470d8bf18ee15270d078c3173/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
+56            <meta-data
+56-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/tbcrow/.gradle/caches/transforms-3/a68586d9ac6fc4872d4884a947d1c1d5/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
+57                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+57-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/tbcrow/.gradle/caches/transforms-3/a68586d9ac6fc4872d4884a947d1c1d5/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78
+58                android:value="androidx.startup" />
+58-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/tbcrow/.gradle/caches/transforms-3/a68586d9ac6fc4872d4884a947d1c1d5/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
+59        </provider>
+60    </application>
+61
+62</manifest>

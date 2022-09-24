@@ -1,0 +1,24 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"java.project.sourcePaths": [
+			"CS357/Exercises",
+			"CS123/Assignments/Assignment #4",
+			"CS123/Assignments/Assignment #3",
+			"CS234/Labs/Lab #2",
+			"CS234/Labs/Lab #3",
+			"CS234/Labs/Lab #4",
+			"CS234/Labs/Lab #5",
+			"CS234/Labs/Lab #6",
+			"CS234/Labs/Lab #7",
+			"CS234/Labs/Lab #8",
+			"CS234/Labs/Lab #9",
+			"."
+		],
+		"maven.view": "flat"
+	}
+}
