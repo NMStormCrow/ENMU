@@ -7,3 +7,39 @@
 // 
 //  In other words, multiply two 250x250 matrices, two 500x500
 //  matrices, etc.
+
+
+public class Matrix_Multiplication {
+
+    public static void multiply_matrix(int matrix_size) {
+
+        //Initialize 2D Arrays
+        int [] [] matrixA = new int [matrix_size] [matrix_size];
+        int [] [] matrixB = new int [matrix_size] [matrix_size];
+        int [] [] matrixC = new int [matrix_size] [matrix_size];
+
+        //Assign values to arrays
+        for (int i=0; i<matrix_size; i++) {
+            for (int j=0; j<matrix_size; j++) {
+                matrixA[i][j] = (int) (Math.random()*10);
+                matrixB[i][j] = (int) (Math.random()*10);
+                matrixC[i][j] = 0;
+            }           
+        }
+
+        //Assign matrixA * matrixB to matrixC
+        for (int i=0; i<matrix_size; i++){
+            for (int j=0; j<matrix_size; j++) {
+                for (int k=0; k<matrix_size; k++) {
+                    matrixC[i][j]+=matrixA[i][k]*matrixB[k][j];      
+                }
+            } 
+        } 
+    }
+
+    public static void main(String[] args) {
+        
+        int matrix_size = 1500;
+        multiply_matrix(matrix_size);
+    }
+}
